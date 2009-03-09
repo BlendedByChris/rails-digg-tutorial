@@ -1,0 +1,155 @@
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mStory Create (0.7ms)[0m   [0mINSERT INTO "stories" ("name", "created_at", "updated_at", "link") VALUES(NULL, '2009-03-09 20:44:36', '2009-03-09 20:44:36', NULL)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (11.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20090309211538)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (11.8ms)[0m   [0;1mDROP TABLE "stories"[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "link" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090309211538')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("stories")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (13.0ms)[0m   [0;1mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "link" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090309211538')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20090309211538)
+  [4;36;1mSQL (16.6ms)[0m   [0;1mDROP TABLE "stories"[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090309211538'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStories (20090309211538)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (11.1ms)[0m   [0mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "link" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090309211538')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("stories")[0m
+  [4;36;1mStory Create (0.5ms)[0m   [0;1mINSERT INTO "stories" ("name", "created_at", "updated_at", "link") VALUES('My shiny weblog', '2009-03-09 22:14:47', '2009-03-09 22:14:47', 'http://poocs.net/')[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;36;1mStory Create (0.4ms)[0m   [0;1mINSERT INTO "stories" ("name", "created_at", "updated_at", "link") VALUES('SitePoint Forums', '2009-03-09 22:15:42', '2009-03-09 22:15:42', 'http://www.sitepoint.com/forums/')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;36;1mStory Load (0.7ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 2) [0m
+  [4;35;1mStory Load (0.6ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 1) [0m
+  [4;36;1mStory Load (0.6ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 1) [0m
+  [4;35;1mStory Load (0.8ms)[0m   [0mSELECT * FROM "stories" [0m
+  [4;36;1mStory Load (0.8ms)[0m   [0;1mSELECT * FROM "stories" [0m
+  [4;35;1mStory Load (0.8ms)[0m   [0mSELECT * FROM "stories" [0m
+  [4;36;1mStory Load (0.8ms)[0m   [0;1mSELECT * FROM "stories" ORDER BY id ASC[0m
+  [4;35;1mStory Load (0.8ms)[0m   [0mSELECT * FROM "stories" ORDER BY id DESC[0m
+  [4;36;1mStory Load (0.6ms)[0m   [0;1mSELECT * FROM "stories" LIMIT 1[0m
+  [4;35;1mStory Load (0.6ms)[0m   [0mSELECT * FROM "stories" LIMIT 1[0m
+  [4;36;1mStory Load (0.6ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."link" = 'http://poocs.net/') LIMIT 1[0m
+  [4;35;1mStory Load (0.7ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."name" = 'My shiny weblog') LIMIT 1[0m
+  [4;36;1mStory Update (0.4ms)[0m   [0;1mUPDATE "stories" SET "updated_at" = '2009-03-09 22:18:58', "name" = 'A weblog about Ruby on Rails' WHERE "id" = 1[0m
+  [4;35;1mStory Update (0.4ms)[0m   [0mUPDATE "stories" SET "updated_at" = '2009-03-09 22:19:27', "name" = 'A weblog about Ruby on Rails2' WHERE "id" = 1[0m
+  [4;36;1mStory Update (0.4ms)[0m   [0;1mUPDATE "stories" SET "updated_at" = '2009-03-09 22:19:37', "name" = 'A weblog about Ruby on Rails' WHERE "id" = 1[0m
+  [4;35;1mStory Destroy (0.8ms)[0m   [0mDELETE FROM "stories" WHERE "id" = 1[0m
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 1) [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-09 17:48:51) [GET]
+
+ActionController::RoutingError (No route matches "/story" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-03-09 17:48:54) [GET]
+Rendering stories/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2009-03-09 17:51:34) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."name" = 'SitePoint Forums') LIMIT 1[0m
+Rendering stories/index
+Completed in 27ms (View: 6, DB: 0) | 200 OK [http://localhost/stories]
