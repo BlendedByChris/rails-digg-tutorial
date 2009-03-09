@@ -1,6 +1,6 @@
 .DS_Store
 nbproject
 log/*.log
-tmp/**/*
 config/database.yml
+tmp/**/*
 db/*.sqlite3
